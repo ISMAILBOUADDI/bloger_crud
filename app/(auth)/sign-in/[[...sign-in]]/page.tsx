@@ -12,7 +12,7 @@ export default function SignInPage() {
           </p>
 		</div>
 		<div className="flex items-center justify-center mt-8">
-		<ClerkLoaded>
+		      <ClerkLoaded>
             <SignIn path="/sign-in" />
           </ClerkLoaded>
           <ClerkLoading>
