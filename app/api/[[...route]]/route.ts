@@ -1,24 +1,20 @@
 import { Hono } from 'hono'
 import { handle } from 'hono/vercel'
-import { clerkMiddleware, getAuth } from '@hono/clerk-auth'
-import { json } from 'stream/consumers'
+// import { clerkMiddleware, getAuth } from '@hono/clerk-auth'
+// import { json } from 'stream/consumers'
+import blogs from "./blogs"
 
+export const runtime = "edge";
 
-export const runtime = 'edge'
 
 const app = new Hono().basePath('/api')
 
-app.get('/hello',clerkMiddleware(), (c) => {
-    const auth = getAuth(c);
-    if(!auth?.userId)
-        return c.json({
-          error : "unautharized"
-        })
-        return c.json({
-          message: 'Hello Next.js!',
-          userId: auth.userId,
-        })
-})
+const routes = app
+  .route('/blogs', blogs)
 
 export const GET = handle(app)
 export const POST = handle(app)
+export const PATCH = handle(app);
+export const DELETE = handle(app);
+
+export type AppType = typeof routes;

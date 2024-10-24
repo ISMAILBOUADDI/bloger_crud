@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import logo from "../logo.svg"
 const Layout = ({
 	children,
   }: Readonly<{
@@ -13,8 +14,8 @@ const Layout = ({
 		className="h-full lg:flex flex-col items-center justify-center px-4">
 		{children}
 	</div>
-	<div className="h-full bg-blue-600 hidden lg:flex items-center justify-center">
-        <Image src="/logo.svg" height={100} width={100} alt="Logo" />
+	<div className="h-full bg-teal-600 hidden lg:flex items-center justify-center">
+        <Image src={logo} height={100} width={100} alt="Logo" />
       </div>
 </div>
 	);
