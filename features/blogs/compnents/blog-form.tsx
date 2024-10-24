@@ -104,7 +104,7 @@ export const BlogForm = ({
             variant="outline"
           >
             <Trash className="size-4 mr-2" />
-            Delete account
+            Delete Blog
           </Button>
         )}
       </form>

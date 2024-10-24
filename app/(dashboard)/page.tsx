@@ -14,7 +14,6 @@ import { columns } from "./columns";
 import { useBulkDeleteblogs } from "@/features/blogs/api/use-bulk-delete";
 export default function Home() {
   const newBlog = useNewBlog();
-  // const newAccount = useNewAccount();
   const deleteBlogs = useBulkDeleteblogs()
   const blogsQuery = useGetBlogs();
   const blogs = blogsQuery.data || [];

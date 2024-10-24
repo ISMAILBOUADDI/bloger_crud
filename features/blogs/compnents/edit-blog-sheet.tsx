@@ -47,7 +47,7 @@ import useConfirm from "../hooks/use-confirm";
       })
     };
     const [ConfirmDialog, confirm] = useConfirm(
-      "Are you sure you want to delete this account?",
+      "Are you sure you want to delete this Blog?",
       "You are about to delete this accaunt."
     );
     const defaultValues = blogQuery.data
