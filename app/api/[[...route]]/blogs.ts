@@ -4,10 +4,9 @@ import { and, eq, inArray } from "drizzle-orm";
 import { blogsTable, insertBlogsSchema } from "@/db/schema";
 import { clerkMiddleware, getAuth } from "@hono/clerk-auth";
 import { zValidator } from "@hono/zod-validator";
-import { createId } from "@paralleldrive/cuid2";
-import { string, z } from "zod";
-import { title } from "process";
-import { log } from "console";
+
+import {  z } from "zod";
+
 
 const app = new Hono()
   .get("/", clerkMiddleware(), async (c) => {

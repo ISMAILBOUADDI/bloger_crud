@@ -1,7 +1,7 @@
 import { create } from "zustand"
 
 type OpenBlogState = {
-    id?: number;
+    id?: any;
     isOpen: boolean;
     onOpen: (id: number) =>  void;
     onClose: () => void;
