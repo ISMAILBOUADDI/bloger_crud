@@ -38,13 +38,14 @@ or you can use docker
 ```
 
 ## Technologies Used
-- **[Clerk](https://go.clerk.com/eoX6HkY)**: Authentication solution.
-- **[Hono](https://hono.dev/)**: Lightweight API framework.
-- **[Drizzle ORM](https://orm.drizzle.team/)**: ORM for database interactions.
-- **[Neon DB](https://neon.tech/)**: Scalable cloud database.
-- **Next.js 14**: React framework for server-side rendering.
-- **TailwindCSS**: Utility-first CSS framework.
-- **Shadcn UI**: Component library for modern UI.
-- **Tanstack React Query**: Data-fetching library for React.
+
+- React framework for server-side rendering : **[Next.js 14](https://nextjs.org/)** 
+- Utility-first CSS framework : **[TailwindCSS](https://tailwindcss.com/)**:
+- Component library for modern UI: **[Shadcn UI](https://ui.shadcn.com/)**
+- Data-fetching library for React : **[Tanstack React Query](https://tanstack.com/)** 
+- Authentication solution: **[Clerk](https://go.clerk.com/eoX6HkY)** 
+- Lightweight API framework **[Hono](https://hono.dev/)**
+- ORM for database interactions : **[Drizzle ORM](https://orm.drizzle.team/)**:
+- Scalable cloud database : **[Neon DB](https://neon.tech/)**:
 
 "# bloger_crud" 
